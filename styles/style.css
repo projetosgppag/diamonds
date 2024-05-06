@@ -1,75 +1,75 @@
-  .login-form {
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      height: 100vh;
-      justify-content: center;
-  }
+ .login-form {
+     align-items: center;
+     display: flex;
+     flex-direction: column;
+     height: 100vh;
+     justify-content: center;
+ }
 
-  .login__header {
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin-bottom: 50px;
-  }
+ .login__header {
+     align-items: center;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     margin-bottom: 50px;
+ }
 
-  #loginH1 {
-      margin-right: 5px;
-      color: #fff;
-      font-size: 4em;
-  }
+ #loginH1 {
+     margin-right: 5px;
+     color: #fff;
+     font-size: 4em;
+ }
 
-  .login__input {
-      border: 2px solid #fff;
-      border-radius: 8px;
-      color: #fff;
-      font-size: 2em;
-      margin-bottom: 20px;
-      max-width: 400px;
-      outline: none;
-      padding: 20px;
-      width: 500px;
-  }
+ .login__input {
+     border: 2px solid #fff;
+     border-radius: 8px;
+     color: #fff;
+     font-size: 2em;
+     margin-bottom: 20px;
+     max-width: 400px;
+     outline: none;
+     padding: 20px;
+     width: 500px;
+ }
 
-  .login__input::placeholder {
-      color: #fff;
-      font-size: 1.5em;
-  }
+ .login__input::placeholder {
+     color: #fff;
+     font-size: 1.5em;
+ }
 
-  .material-symbols-outlined {
-      font-size: 40px;
-      border-radius: 8px;
-      color: #fff;
-      cursor: pointer;
-      max-width: 50px;
-      padding: 20px;
-      margin-top: -15px;
-  }
+ .material-symbols-outlined {
+     font-size: 40px;
+     border-radius: 8px;
+     color: #fff;
+     cursor: pointer;
+     max-width: 50px;
+     padding: 20px;
+     margin-top: -15px;
+ }
 
-  .flex {
-      display: flex;
-      align-items: center;
-  }
+ .flex {
+     display: flex;
+     align-items: center;
+ }
 
-  .flex * {
-      margin-right: 5px;
-  }
+ .flex * {
+     margin-right: 5px;
+ }
 
-  .flex :last-child {
-      margin-right: 0;
-  }
+ .flex :last-child {
+     margin-right: 0;
+ }
 
-  .material-symbols-outlined {
-      font-size: 35px;
-      border-radius: 8px;
-      color: #fff;
-      cursor: pointer;
-      max-width: 40px;
-      padding: 15px;
-      margin-top: -10px;
-  }
+ .material-symbols-outlined {
+     font-size: 35px;
+     border-radius: 8px;
+     color: #fff;
+     cursor: pointer;
+     max-width: 40px;
+     padding: 15px;
+     margin-top: -10px;
+ }
 
-  .material-symbols-outlined:hover {
-      color: gray;
-  }
+ .material-symbols-outlined:hover {
+     color: gray;
+ }

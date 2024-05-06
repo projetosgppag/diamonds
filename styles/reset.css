@@ -1,8 +1,16 @@
 * {
-    background-color: #333;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
     border: none;
+}
+
+body {
+    background-image: url("logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: #333;
 }
