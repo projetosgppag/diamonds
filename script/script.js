@@ -35,21 +35,48 @@ window.onload = () => {
 
     write(fraseParaEscrever, target);
     /////////////////////////////////////////////
-    const textoOriginal = "Digite a senha";
+    const title = document.getElementById('loginH1');
+    const original = 'Digite a senha';
+    const shiftValue = 3;
 
-    setInterval(() => {
-        const randomText = () => {
-            let texto = "";
-            for (let i = 0; i < textoOriginal.length; i++) {
-                texto += String.fromCharCode(Math.floor(Math.random() * 94) + 33);
+    function caesarEncrypt(text, shift) {
+        let result = '';
+        for (let i = 0; i < text.length; i++) {
+            let charCode = text.charCodeAt(i);
+            if (charCode >= 65 && charCode <= 90) {
+                charCode = (charCode - 65 + shift) % 26 + 65;
+            } else if (charCode >= 97 && charCode <= 122) {
+                charCode = (charCode - 97 + shift) % 26 + 97;
             }
-            return texto;
-        };
+            result += String.fromCharCode(charCode);
+        }
+        return result;
+    }
 
-        target.textContent = randomText();
+    const encryptedTitle = caesarEncrypt(original, shiftValue);
+    let currentTitle = encryptedTitle;
+    let currentIndex = 0;
 
-        setTimeout(() => {
-            target.textContent = textoOriginal;
-        }, 50);
-    }, 3000);
+    function animateCaesarTitle() {
+        if (currentIndex < original.length) {
+            currentTitle = currentTitle.split('');
+            currentTitle[currentIndex] = original[currentIndex];
+            currentTitle = currentTitle.join('');
+            currentIndex++;
+        }
+
+        title.innerText = currentTitle;
+
+        if (currentIndex < original.length) {
+            setTimeout(animateCaesarTitle, 100);
+        } else if (currentIndex === original.length) {
+            setTimeout(() => {
+                currentIndex = 0;
+                currentTitle = encryptedTitle;
+                animateCaesarTitle();
+            }, 5000);
+        }
+    }
+
+    setTimeout(animateCaesarTitle, fraseParaEscrever.length + 3000);
 };

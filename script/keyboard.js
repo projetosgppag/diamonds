@@ -11,6 +11,15 @@ buttons.forEach(btn => {
     });
 });
 
+
+const colors = ['rgb(218, 115, 115)', 'rgb(151, 225, 151)', 'rgb(244, 166, 205)', 'rgb(158, 201, 233)'];
+buttons.forEach((btn, index) => {
+    btn.addEventListener('click', () => {
+        btn.style.color = 'black';
+        btn.style.backgroundColor = colors[index];
+    });
+});
+
 /*
 deleteBtn.addEventListener('click', () => {
     chars.length = 0;
