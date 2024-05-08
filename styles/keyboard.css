@@ -5,8 +5,7 @@
     margin-top: -120px;
 }
 
-.btn,
-.delete {
+.btn {
     background: rgba(255, 255, 255, 0.2);
     -webkit-tap-highlight-color: transparent;
     border: none;
@@ -21,17 +20,8 @@
     transform: scale(1.5);
 }
 
-.delete {
-    font-size: 1rem;
-    text-transform: capitalize;
-}
-
-.delete {
-    width: 100px;
-}
-
 .btn:hover {
     background-color: #fff;
-    color: #333;
+    color: #000000;
     cursor: pointer;
 }
